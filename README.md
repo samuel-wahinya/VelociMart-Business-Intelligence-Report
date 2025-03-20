@@ -21,9 +21,9 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 ---
 
-### <img src="https://i.postimg.cc/QNTgzhvV/monitor.png" alt="BI Analytics & Reporting" width="25" height="25" /> BI Analytics & Reporting (Data Analytics)
+### <img src="https://i.postimg.cc/QNTgzhvV/monitor.png" alt="BI Analytics & Reporting" width="15" height="15" /> BI Analytics & Reporting (Data Analytics)
 
-#### <img src="https://i.postimg.cc/pXj28nwq/target.png" alt="Objective" width="25" height="25" /> Objective
+#### <img src="https://i.postimg.cc/pXj28nwq/target.png" alt="Objective" width="15" height="15" /> Objective
 Develop SQL based analytics to deliver detailed insights into:
 - **Customer Behaviour**
 - **Product Performance**
