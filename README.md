@@ -5,9 +5,7 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 ---
 
-### <img src="https://i.postimg.cc/sDhLKPDG/required.png" alt="Required" width="15" height="15" /> Project Requirements
-
-#### <img src="https://i.postimg.cc/y8J00nV2/data-warehouse.png" alt="Data Warehouse" width="15" height="15" /> Building the Data Warehouse (Data Engineering)
+### <img src="https://i.postimg.cc/y8J00nV2/data-warehouse.png" alt="Data Warehouse" width="15" height="15" /> Building the Data Warehouse (Data Engineering)
 
 #### <img src="https://i.postimg.cc/pXj28nwq/target.png" alt="Objective" width="15" height="15" /> Objective
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
