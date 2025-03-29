@@ -5,12 +5,12 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 ---
 
-### <img src="https://i.postimg.cc/y8J00nV2/data-warehouse.png" alt="Data Warehouse" width="15" height="15" /> Building the Data Warehouse (Data Engineering)
+### Data Engineering: Building the Data Warehouse
 
-#### <img src="https://i.postimg.cc/pXj28nwq/target.png" alt="Objective" width="15" height="15" /> Objective
+#### Objective
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
-#### <img src="https://i.postimg.cc/4dhJ57Kf/survey.png" alt="Specifications" width="15" height="15" /> Specifications
+#### Specifications
 - **Data Sources** - import data from two source systems (ERP & CRM) provided as CSV files.
 - **Data Quality** - cleanse and resolve data quality issues prior to analysis.
 - **Integration** - combine both sources into a single, user-friendly data model designed for analytical queries.
@@ -19,9 +19,9 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 ---
 
-### <img src="https://i.postimg.cc/QNTgzhvV/monitor.png" alt="BI Analytics & Reporting" width="15" height="15" /> BI Analytics & Reporting (Data Analytics)
+### Data Analytics: BI Analytics & Reporting
 
-#### <img src="https://i.postimg.cc/pXj28nwq/target.png" alt="Objective" width="15" height="15" /> Objective
+#### Objective
 Develop SQL based analytics to deliver detailed insights into:
 - **Customer Behaviour**
 - **Product Performance**
