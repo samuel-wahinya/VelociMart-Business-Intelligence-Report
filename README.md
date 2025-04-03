@@ -33,6 +33,16 @@ This script:
 - Creates **3 CRM** and **3 ERP** tables in the **bronze schema**.  
 - Ensures existing tables are dropped before re-creation.
 
+### Bronze Layer - Data Loading  
+
+The **Bronze Layer** is loaded using a stored procedure that:  
+- **Truncates** existing data to avoid duplicates.  
+- Uses **BULK INSERT** to load data from **CSV files** into Bronze tables.  
+- Logs the start and end times for performance tracking.  
+- Implements **error handling** to capture issues during data loading.  
+
+📜 SQL Script: [`scripts/bronze/proc_load_bronze.sql`](scripts/bronze/proc_load_bronze.sql)  
+
 ---
 
 ### Data Analytics: BI Analytics & Reporting
