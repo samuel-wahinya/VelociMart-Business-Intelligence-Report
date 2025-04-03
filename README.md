@@ -23,6 +23,16 @@ This script:
 - Creates the **DataWarehouse** database.
 - Defines **three schemas**: `bronze`, `silver`, and `gold` for data segregation.
 
+### Bronze Layer - Raw Data Tables  
+
+The **Bronze Layer** stores raw data ingested from **CRM** and **ERP** sources. No transformations are performed at this stage.  
+
+📜 SQL Script: [`scripts/bronze/ddl_bronze.sql`](scripts/bronze/ddl_bronze.sql)  
+
+This script:  
+- Creates **3 CRM** and **3 ERP** tables in the **bronze schema**.  
+- Ensures existing tables are dropped before re-creation.
+
 ---
 
 ### Data Analytics: BI Analytics & Reporting
