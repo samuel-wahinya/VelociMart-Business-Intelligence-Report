@@ -1,6 +1,6 @@
 # Table Naming Conventions
 
-1) ## Bronze & Silver layer 
+## Bronze & Silver layer 
 
 All names must start with source system name and table names must match their original names without renaming.
 
@@ -9,7 +9,7 @@ All names must start with source system name and table names must match their or
   * **\<entity\>** \- exact table name from source system.  
 * Example *crm\_customer\_info*; customer information from crm system.
 
-2) ## Gold layer 
+## Gold layer 
 
 All names must use meaningful, business-aligned names for tables, starting with category prefix.
 
