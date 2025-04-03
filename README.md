@@ -17,7 +17,7 @@ This project involves building a **modern data warehouse** using **SQL Server** 
 
 Before loading data into the **Data Warehouse**, we first need to create the **database** and **schemas** to support the Medallion Architecture (**Bronze, Silver, Gold Layers**).
 
-### 📜 SQL Script: [`scripts/init_database.sql`](scripts/init_database.sql)
+📜 SQL Script: [`scripts/init_database.sql`](scripts/init_database.sql)
 This script:
 - Creates the **DataWarehouse** database.
 - Defines **three schemas**: `bronze`, `silver`, and `gold` for data segregation.
