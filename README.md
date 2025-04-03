@@ -5,17 +5,13 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 ---
 
-### Data Engineering: Building the Data Warehouse
+## Data Engineering: Building the Data Warehouse
 
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+### Project Overview
+This project involves building a **modern data warehouse** using **SQL Server** to consolidate sales data from **CRM** and **ERP** sources. The warehouse follows the **Medallion Architecture**, ensuring data quality, transformation, and ease of analytical consumption.
 
-#### Specifications
-- **Data Sources** - import data from two source systems (ERP & CRM) provided as CSV files.
-- **Data Quality** - cleanse and resolve data quality issues prior to analysis.
-- **Integration** - combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope** - focus on the latest dataset only; historization of data is not required.
-- **Documentation** - provide clear documentation of data model to support both business stakeholders and analytical teams.
+### Data Architecture
+![Data Architecture](docs/Data%20Architecture.jpg)
 
 ---
 
