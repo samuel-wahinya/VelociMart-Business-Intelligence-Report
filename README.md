@@ -43,6 +43,24 @@ The **Bronze Layer** is loaded using a stored procedure that:
 
 📜 SQL Script: [`scripts/bronze/proc_load_bronze.sql`](scripts/bronze/proc_load_bronze.sql)  
 
+## Data Flow Diagram  
+
+![Data Flow Diagram](docs/Data%20Flow%20Diagram%201.jpg) 
+
+This diagram illustrates how data flows from **CRM** and **ERP** source systems into the **Bronze Layer** of the data warehouse.  
+
+📌 **Sources:**  
+- **CRM** → Customer, product, and sales data  
+- **ERP** → Customer, location, and pricing data  
+
+📌 **Bronze Layer Tables:**  
+- `crm_cust_info`  
+- `crm_prd_info`  
+- `crm_sales_details`  
+- `erp_cust_az12`  
+- `erp_loc_a101`  
+- `erp_px_cat_g1v2`  
+
 ---
 
 ### Data Analytics: BI Analytics & Reporting
