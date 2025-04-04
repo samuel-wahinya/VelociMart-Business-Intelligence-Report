@@ -5,15 +5,15 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 ---
 
-## Data Engineering: Building the Data Warehouse
+## 1) Data Engineering: Building the Data Warehouse
 
 ### Project Overview
 This project involves building a **modern data warehouse** using **SQL Server** to consolidate sales data from **CRM** and **ERP** sources. The warehouse follows the **Medallion Architecture**, ensuring data quality, transformation, and ease of analytical consumption.
 
-### Data Architecture
+### 1.0) Data Architecture
 ![Data Architecture](docs/Data%20Architecture.jpg)
 
-### Database & Schema Creation
+### 1.1) Database & Schema Creation
 
 Before loading data into the **Data Warehouse**, we first need to create the **database** and **schemas** to support the Medallion Architecture (**Bronze, Silver, Gold Layers**).
 
@@ -23,7 +23,7 @@ This script:
 - Creates the **DataWarehouse** database.
 - Defines **three schemas**: `bronze`, `silver`, and `gold` for data segregation.
 
-### Bronze Layer - Raw Data Tables  
+### 1.2) Bronze Layer - Raw Data Tables  
 
 The **Bronze Layer** stores raw data ingested from **CRM** and **ERP** sources. No transformations are performed at this stage.  
 
@@ -33,7 +33,7 @@ This script:
 - Creates **3 CRM** and **3 ERP** tables in the **bronze schema**.  
 - Ensures existing tables are dropped before re-creation.
 
-### Bronze Layer - Data Loading  
+### 1.3) Bronze Layer - Data Loading  
 
 The **Bronze Layer** is loaded using a stored procedure that:  
 - **Truncates** existing data to avoid duplicates.  
@@ -43,7 +43,7 @@ The **Bronze Layer** is loaded using a stored procedure that:
 
 📜 SQL Script: [`scripts/bronze/proc_load_bronze.sql`](scripts/bronze/proc_load_bronze.sql)  
 
-## Data Flow Diagram  
+## 1.4) Data Flow Diagram  
 
 ![Data Flow Diagram](docs/Data%20Flow%20Diagram%201.jpg) 
 
