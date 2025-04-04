@@ -84,6 +84,18 @@ Understanding how the tables are connected helps define the **Silver Layer trans
 
 ![Integration Model](docs/Integration_Model.jpg)
 
+### 1.6) Silver Layer Table Definitions
+
+The Silver layer represents the **cleaned and structured version** of the raw data ingested into the Bronze layer. This stage includes additional metadata columns like `dwh_create_date`, which records the timestamp when the data entered the Silver layer — critical for auditability and tracking freshness of data.
+
+### 💡 Purpose:
+- To clean, standardize, and structure the raw Bronze data for analytical use.
+- To prepare datasets that are easier to **join**, **filter**, and **analyze** in the Gold layer.
+- To ensure **data integrity** by including creation timestamps via the `dwh_create_date` column.
+- To retain schema similarity to the Bronze layer while applying transformations as needed.
+
+📄 Script Location: `scripts/silver/ddl_silver.sql`
+
 ---
 
 ### Data Analytics: BI Analytics & Reporting
