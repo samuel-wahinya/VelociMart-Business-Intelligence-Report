@@ -43,7 +43,7 @@ The **Bronze Layer** is loaded using a stored procedure that:
 
 📜 SQL Script: [`scripts/bronze/proc_load_bronze.sql`](scripts/bronze/proc_load_bronze.sql)  
 
-## 1.4) Data Flow Diagram  
+### 1.4) Data Flow Diagram  
 
 ![Data Flow Diagram](docs/Data%20Flow%20Diagram%201.jpg) 
 
@@ -60,6 +60,36 @@ This diagram illustrates how data flows from **CRM** and **ERP** source systems 
 - `erp_cust_az12`  
 - `erp_loc_a101`  
 - `erp_px_cat_g1v2`  
+
+### 1.5) Silver Layer - Data Exploration & Understanding
+
+To efficiently transform data from the **Bronze Layer** into the **Silver Layer**, it is essential to understand the purpose of each table.
+
+
+#### 📌 Data Breakdown
+
+| **Table Name**        | **Description**  |
+|-----------------------|----------------|
+| `crm_cust_info`      | Contains details and descriptions of customers. |
+| `crm_prd_info`       | Holds product history and attributes. |
+| `crm_sales_details`  | An event and transactional table for sales and orders. Can be used to connect with other tables. |
+| `erp_cust_az12`      | Additional customer details from the ERP system. |
+| `erp_loc_a101`       | Stores location-related customer data. |
+| `erp_px_cat_g1v2`    | Provides extra information about products. |
+
+
+#### 🔗 Integration Model (Table Relationships)
+
+Understanding how the tables are connected helps define the **Silver Layer transformations**.
+
+**📷 Integration Model:**  
+![Integration Model](docs/Integration_Model.jpg)
+
+- `crm_sales_details.sls_cust_id` → `crm_cust_info.cst_id`
+- `crm_sales_details.sls_prd_key` → `crm_prd_info.prd_key`
+- `crm_cust_info.cst_id` → `erp_cust_az12.cid`
+- `crm_cust_info.cst_id` → `erp_loc_a101.cid`
+- `crm_prd_info.prd_key` → `erp_px_cat_g1v2.cid`
 
 ---
 
