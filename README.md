@@ -82,14 +82,7 @@ To efficiently transform data from the **Bronze Layer** into the **Silver Layer*
 
 Understanding how the tables are connected helps define the **Silver Layer transformations**.
 
-**📷 Integration Model:**  
 ![Integration Model](docs/Integration_Model.jpg)
-
-- `crm_sales_details.sls_cust_id` → `crm_cust_info.cst_id`
-- `crm_sales_details.sls_prd_key` → `crm_prd_info.prd_key`
-- `crm_cust_info.cst_id` → `erp_cust_az12.cid`
-- `crm_cust_info.cst_id` → `erp_loc_a101.cid`
-- `crm_prd_info.prd_key` → `erp_px_cat_g1v2.cid`
 
 ---
 
