@@ -94,7 +94,7 @@ The Silver layer represents the **cleaned and structured version** of the raw da
 - To ensure **data integrity** by including creation timestamps via the `dwh_create_date` column.
 - To retain schema similarity to the Bronze layer while applying transformations as needed.
 
-📄 Script Location: `scripts/silver/ddl_silver.sql`
+📜 SQL Script: [`scripts/silver/ddl_silver.sql`](scripts/silver/ddl_silver.sql)  
 
 ---
 
