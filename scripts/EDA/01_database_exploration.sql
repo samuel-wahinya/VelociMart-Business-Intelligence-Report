@@ -14,12 +14,12 @@ Usage Example:
 =========================================================================================================
 */
 USE DataWarehouse;
-GO;
+GO
 
 SELECT * 
 FROM INFORMATION_SCHEMA.TABLES;
-GO;
+GO
 
 SELECT * 
 FROM INFORMATION_SCHEMA.COLUMNS;
-GO;
+GO
