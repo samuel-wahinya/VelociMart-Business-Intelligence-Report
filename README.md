@@ -90,10 +90,26 @@ A comprehensive documentation of the Sales Data Mart tables, including **columns
 
 This report provides a high-level overview of VelociMart's sales, profit, and quantity performance trends from 2010 to 2014, highlighting significant growth patterns, seasonal fluctuations, and category performance across the years.
 
+![CRO Dashboard](docs/CRO-Dashboard.jpg)
+
+🔗 [View Interactive Dashboard](https://public.tableau.com/shared/HBWCH3TXQ?:display_count=n&:origin=viz_share_link)
+
+---
+
 ### 🧠 Key Takeaways
 
-- **Sales and profit grew steadily** from 2010 through 2013, with a significant spike in 2013.
-- **Seasonality played a strong role**, with consistent peaks around mid-year and December.
-- **Bikes remained the most profitable and highest-selling category**, followed by accessories and clothing in 2013.
+- **Explosive growth** between 2010 and 2013:
+  - Sales grew from **$43.4K (2010)** to **$16.3M (2013)**  
+  - Profit increased from **$17.7K (2010)** to **$6.76M (2013)**
+  - Units sold rose from **14 (2010)** to **52,226 (2013)**
+
+- **Seasonality played a strong role**, with:
+  - **February** consistently being a low-sales month.  
+  - **June and December** peaking in both sales and profits.
+
+- **Bikes remained the top-performing category** every year:
+  - Leading both in **revenue and profit** outpacing Accessories and Clothing.
+
+
 
 
