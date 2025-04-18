@@ -85,3 +85,15 @@ Visual representation of the **Sales Data Mart** modeled as a **Star Schema**, c
 
 A comprehensive documentation of the Sales Data Mart tables, including **columns, data types, and descriptions**.  
 📎 [View Data Catalog](docs/data_catalog.md)
+
+## 📈 Executive Summary
+
+This report provides a high-level overview of VelociMart's sales, profit, and quantity performance trends from 2010 to 2014, highlighting significant growth patterns, seasonal fluctuations, and category performance across the years.
+
+### 🧠 Key Takeaways
+
+- **Sales and profit grew steadily** from 2010 through 2013, with a significant spike in 2013.
+- **Seasonality played a strong role**, with consistent peaks around mid-year and December.
+- **Bikes remained the most profitable and highest-selling category**, followed by accessories and clothing in 2013.
+
+
