@@ -1,6 +1,6 @@
 # VelociMart
 
-## 📘 Project Background
+## 1) Project Background
 
 **VelociMart** is a dynamic e-commerce company founded in 2010, specializing in the sale of high-performance cycling gear and accessories. Their product catalog spans Bikes, Components, Clothing, and Accessories, catering to both casual riders and professional cyclists.
 
@@ -44,7 +44,7 @@ CRO dashboard was built in **Tableau Public**, providing rich, visual insights f
 
 - 🌐 [View CRO Dashboard in Tableau Public](https://public.tableau.com/shared/HBWCH3TXQ?:display_count=n&:origin=viz_share_link)
 
-## 🧱 Data Structure
+## 2) Data Structure
 
 This section highlights the core structure and modeling approach used in VelociMart’s data warehouse. It covers the architecture, flow, and star schema modeling that enabled effective analysis and reporting.
 
@@ -86,7 +86,7 @@ Visual representation of the **Sales Data Mart** modeled as a **Star Schema**, c
 A comprehensive documentation of the Sales Data Mart tables, including **columns, data types, and descriptions**.  
 📎 [View Data Catalog](docs/data_catalog.md)
 
-## 📈 Executive Summary
+## 3) Executive Summary
 
 This report provides a high-level overview of VelociMart's sales, profit, and quantity performance trends from 2010 to 2014, highlighting significant growth patterns, seasonal fluctuations, and category performance across the years.
 
@@ -110,6 +110,14 @@ This report provides a high-level overview of VelociMart's sales, profit, and qu
 - **Bikes remained the top-performing category** every year:
   - Leading both in **revenue and profit** outpacing Accessories and Clothing.
 
+## 4) Recommendations
 
+Based on the analysis of historical performance trends, category performance, and seasonal fluctuations, the following actions are recommended to sustain growth and drive better business outcomes:
 
+- **Double down on Bikes category**: With consistently high revenue and profit margins, this category should receive priority in marketing, inventory planning, and supply chain optimization.
 
+- **Capitalize on peak seasons**: Allocate more resources to inventory, campaigns, and customer engagement during high-performing months like **June and December** to maximize sales opportunities.
+
+- **Address February sales slump**: Investigate causes of low performance during February and explore targeted promotions, flash sales, or product bundles to stimulate demand.
+
+- **Leverage Accessories and Clothing**: These categories showed strong secondary performance in 2013. Curated cross-sell strategies (e.g. bundling with bikes) could boost overall order value.
