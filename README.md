@@ -1,109 +1,45 @@
-# Data Warehouse and Analytics Projects
+# VelociMart
 
-Welcome to the **Data Warehouse and Analytics Project** repository.
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights.
+## 📘 Project Background
 
----
+**VelociMart** is a dynamic e-commerce company founded in 2010, specializing in the sale of high-performance cycling gear and accessories. Their product catalog spans Bikes, Components, Clothing, and Accessories, catering to both casual riders and professional cyclists.
 
-## 1) Data Engineering: Building the Data Warehouse
+To keep up with business growth and evolving decision-making needs, VelociMart needed to transition from Excel-based reporting to a **scalable, reliable data platform**. This project was initiated to help the company unlock deeper insights from their data using **SQL Server** for warehousing and **Tableau** for visualization.
 
-### Project Overview
-This project involves building a **modern data warehouse** using **SQL Server** to consolidate sales data from **CRM** and **ERP** sources. The warehouse follows the **Medallion Architecture**, ensuring data quality, transformation, and ease of analytical consumption.
+The project focuses on delivering insights and recommendations for VelociMart’s leadership, especially the Chief Revenue Officer (CRO), in the following key areas:
 
-### 1.0) Data Architecture
-![Data Architecture](docs/Data%20Architecture.jpg)
-
-### 1.1) Database & Schema Creation
-
-Before loading data into the **Data Warehouse**, we first need to create the **database** and **schemas** to support the Medallion Architecture (**Bronze, Silver, Gold Layers**).
-
-📜 SQL Script: [`scripts/init_database.sql`](scripts/init_database.sql)
-
-This script:
-- Creates the **DataWarehouse** database.
-- Defines **three schemas**: `bronze`, `silver`, and `gold` for data segregation.
-
-### 1.2) Bronze Layer - Raw Data Tables  
-
-The **Bronze Layer** stores raw data ingested from **CRM** and **ERP** sources. No transformations are performed at this stage.  
-
-📜 SQL Script: [`scripts/bronze/ddl_bronze.sql`](scripts/bronze/ddl_bronze.sql)  
-
-This script:  
-- Creates **3 CRM** and **3 ERP** tables in the **bronze schema**.  
-- Ensures existing tables are dropped before re-creation.
-
-### 1.3) Bronze Layer - Data Loading  
-
-The **Bronze Layer** is loaded using a stored procedure that:  
-- **Truncates** existing data to avoid duplicates.  
-- Uses **BULK INSERT** to load data from **CSV files** into Bronze tables.  
-- Logs the start and end times for performance tracking.  
-- Implements **error handling** to capture issues during data loading.  
-
-📜 SQL Script: [`scripts/bronze/proc_load_bronze.sql`](scripts/bronze/proc_load_bronze.sql)  
-
-### 1.4) Data Flow Diagram  
-
-![Data Flow Diagram](docs/Data%20Flow%20Diagram%201.jpg) 
-
-This diagram illustrates how data flows from **CRM** and **ERP** source systems into the **Bronze Layer** of the data warehouse.  
-
-📌 **Sources:**  
-- **CRM** → Customer, product, and sales data  
-- **ERP** → Customer, location, and pricing data  
-
-📌 **Bronze Layer Tables:**  
-- `crm_cust_info`  
-- `crm_prd_info`  
-- `crm_sales_details`  
-- `erp_cust_az12`  
-- `erp_loc_a101`  
-- `erp_px_cat_g1v2`  
-
-### 1.5) Silver Layer - Data Exploration & Understanding
-
-To efficiently transform data from the **Bronze Layer** into the **Silver Layer**, it is essential to understand the purpose of each table.
-
-
-#### 📌 Data Breakdown
-
-| **Table Name**        | **Description**  |
-|-----------------------|----------------|
-| `crm_cust_info`      | Contains details and descriptions of customers. |
-| `crm_prd_info`       | Holds product history and attributes. |
-| `crm_sales_details`  | An event and transactional table for sales and orders. Can be used to connect with other tables. |
-| `erp_cust_az12`      | Additional customer details from the ERP system. |
-| `erp_loc_a101`       | Stores location-related customer data. |
-| `erp_px_cat_g1v2`    | Provides extra information about products. |
-
-
-#### 🔗 Integration Model (Table Relationships)
-
-Understanding how the tables are connected helps define the **Silver Layer transformations**.
-
-![Integration Model](docs/Integration_Model.jpg)
-
-### 1.6) Silver Layer Table Definitions
-
-The Silver layer represents the **cleaned and structured version** of the raw data ingested into the Bronze layer. This stage includes additional metadata columns like `dwh_create_date`, which records the timestamp when the data entered the Silver layer — critical for auditability and tracking freshness of data.
-
-### 💡 Purpose:
-- To clean, standardize, and structure the raw Bronze data for analytical use.
-- To prepare datasets that are easier to **join**, **filter**, and **analyze** in the Gold layer.
-- To ensure **data integrity** by including creation timestamps via the `dwh_create_date` column.
-- To retain schema similarity to the Bronze layer while applying transformations as needed.
-
-📜 SQL Script: [`scripts/silver/ddl_silver.sql`](scripts/silver/ddl_silver.sql)  
+- Year-over-year growth in sales and profit  
+- Monthly and seasonal performance trends  
+- Weekly sales monitoring to track progress against targets  
+- High and low-performing periods across product categories and timeframes  
 
 ---
 
-### Data Analytics: BI Analytics & Reporting
+### ⚙️ Data Engineering
 
-#### Objective
-Develop SQL based analytics to deliver detailed insights into:
-- **Customer Behaviour**
-- **Product Performance**
-- **Sales Trends**
+Scripts for building the data warehouse using the **Medallion Architecture**:
 
-These insights empower stakeholders with key business metrics, enabling strategic decision making.
+- 🟤 [Bronze Layer](scripts/bronze) — Raw data ingestion  
+- ⚪ [Silver Layer](scripts/silver) — Cleaned and conformed data  
+- 🟡 [Gold Layer](scripts/gold) — Analytical, business-ready data marts  
+
+Data quality checks to ensure accurate and reliable analysis:
+
+- 🧪 [Silver Layer Quality Checks](tests/quality_checks_silver.sql)  
+- 🧪 [Gold Layer Quality Checks](tests/quality_checks_gold.sql)
+
+---
+
+### 📊 Data Analysis
+
+SQL logic for preparing the sales data for reporting:
+
+- 📄 [Sales Report SQL Script](scripts/reports/sales_report.sql)
+
+---
+
+### 📈 Data Visualization
+
+CRO dashboard was built in **Tableau Public**, providing rich, visual insights for decision-makers:
+
+- 🌐 [View CRO Dashboard in Tableau Public](https://public.tableau.com/shared/HBWCH3TXQ?:display_count=n&:origin=viz_share_link)
