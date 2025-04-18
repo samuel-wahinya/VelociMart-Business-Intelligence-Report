@@ -1,4 +1,4 @@
-# VelociMart
+# VelociMart Business Insights
 
 ## 1) Project Background
 
