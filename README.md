@@ -1,5 +1,21 @@
 # VelociMart Business Insights
 
+## 📚 Table of Contents
+
+1. [Project Background](#1-project-background)  
+   - [Data Engineering](#️data-engineering)  
+   - [Data Analysis](#data-analysis)  
+   - [Data Visualization](#️data-visualization)  
+2. [Data Structure](#2-data-structure)  
+   - [Data Architecture](#️data-architecture)  
+   - [Integration Model](#integration-model)  
+   - [Data Flow Diagram](#data-flow-diagram)  
+   - [Sales Data Mart (Star Schema)](#sales-data-mart-star-schema)  
+   - [Data Catalog](#️data-catalog)  
+3. [Executive Summary](#3-executive-summary)  
+   - [Key Takeaways](#key-takeaways)  
+4. [Recommendations](#4-recommendations)
+
 ## 1) Project Background
 
 **VelociMart** is a dynamic e-commerce company founded in 2010, specializing in the sale of high-performance cycling gear and accessories. Their product catalog spans Bikes, Components, Clothing, and Accessories, catering to both casual riders and professional cyclists.
