@@ -112,28 +112,33 @@ This report provides a high-level overview of VelociMart's sales, profit, and qu
 
 ---
 
-### 🧠 Key Takeaways
+### 🧠 Key Takeaways (2013 vs 2012)
 
-- **Explosive growth** between 2010 and 2013:
-  - Sales grew from **$43.4K (2010)** to **$16.3M (2013)**  
-  - Profit increased from **$17.7K (2010)** to **$6.76M (2013)**
-  - Units sold rose from **14 (2010)** to **52,226 (2013)**
+- **Massive business turnaround**:
+  - Sales soared from **$5.84M (2012)** to **$16.3M (2013)** — a **179.5% increase**.
+  - Profit more than tripled from **$2.05M** to **$6.76M** — a **228.8% surge**.
+  - Units sold exploded from **3,396 units** to **52,226 units** — a **1,437.9% increase**.
 
-- **Seasonality played a strong role**, with:
-  - **February** consistently being a low-sales month.  
-  - **June and December** peaking in both sales and profits.
+- **Category performance**:
+  - **Bikes** remained the top revenue driver, with December peaking at **$1.74M** in sales and **$721K** in profit.
+  - **Accessories and Clothing** showed notable growth in 2013, especially in December.
 
-- **Bikes remained the top-performing category** every year:
-  - Leading both in **revenue and profit** outpacing Accessories and Clothing.
+- **Seasonality insights**:
+  - **February** was the lowest-performing month with **$704K in sales** and **$283K in profit**.
+  - **December** was the best month, achieving **$1.74M in sales** and **$721K in profit**, underscoring strong holiday demand.
 
 ## 4) Recommendations
 
 Based on the analysis of historical performance trends, category performance, and seasonal fluctuations, the following actions are recommended to sustain growth and drive better business outcomes:
 
-- **Double down on Bikes category**: With consistently high revenue and profit margins, this category should receive priority in marketing, inventory planning, and supply chain optimization.
+- **Double down on Bikes category**  
+  Bikes generated the highest revenue and profit in 2013, peaking at **$1.74M** in sales and **$721K** in profit in December. Prioritize marketing, inventory management, and supply chain optimization around the Bikes category to maintain and expand this dominant position.
 
-- **Capitalize on peak seasons**: Allocate more resources to inventory, campaigns, and customer engagement during high-performing months like **June and December** to maximize sales opportunities.
+- **Capitalize on peak seasons**  
+  December (sales: **$1.74M**, profit: **$721K**) and June (high seasonal peaks in prior years) consistently outperform other months. Ramp up inventory, promotional campaigns, and customer engagement initiatives leading into these months to maximize conversion and revenue.
 
-- **Address February sales slump**: Investigate causes of low performance during February and explore targeted promotions, flash sales, or product bundles to stimulate demand.
+- **Address February sales slump**  
+  February remained the lowest-performing month in 2013 with **$704K** in sales and **$283K** in profit. Launch targeted promotions such as Valentine’s Day bundles, flash sales, or loyalty incentives to stimulate mid-winter demand.
 
-- **Leverage Accessories and Clothing**: These categories showed strong secondary performance in 2013. Curated cross-sell strategies (e.g. bundling with bikes) could boost overall order value.
+- **Leverage Accessories and Clothing growth**  
+  Accessories and Clothing categories demonstrated strong secondary growth, especially in December. For example, Accessories played a major supporting role during the December sales peak. Implement cross-sell strategies by bundling Accessories and Clothing with Bikes to boost average order value and diversify revenue streams.
